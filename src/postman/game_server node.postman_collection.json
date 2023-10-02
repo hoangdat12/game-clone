@@ -1,0 +1,3572 @@
+{
+	"info": {
+		"_postman_id": "a0ede0ad-d05c-4871-a276-cf0715662792",
+		"name": "game_server node",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26067639",
+		"_collection_link": "https://grey-moon-921528.postman.co/workspace/Animal-Farmjam~dcb92d60-0535-4a83-8948-2dff0f260341/collection/26067639-a0ede0ad-d05c-4871-a276-cf0715662792?action=share&source=collection_link&creator=26067639"
+	},
+	"item": [
+		{
+			"name": "user data manipulation (done)",
+			"item": [
+				{
+					"name": "Get user data (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uid\": \"jZjEtQnj7pkZj7kQDT7P\",\r\n    \"keys\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetUDs"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All key-vals user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uid\": \"_7kB7ztzrBHHMBrzjfc7a\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetAllUD"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All key-vals List Users",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uids\": [\r\n        \"_7azBnt7jHXMtJakjvw7l\", \"_7fkE7JWn7AkBB7kWD7My\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/getUserDatas"
+					},
+					"response": []
+				},
+				{
+					"name": "Set user data (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uid\": \"_7kB7ztzrBHHMBrzjfCkX\",\r\n    \"keys\": [\"b1\", \"b2\", \"b3\", \"b4\", \"b5\", \"b6\", \"b8\", \"i15\"], \r\n    \"vals\": [\"Trong\", \"asdasd\", \"1231\", \"asda\", \"1323\", \"asda\", \"3333\", \"dasd\"]\r\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/SetUDs"
+					},
+					"response": []
+				},
+				{
+					"name": "Set user data2 (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uid\":\"_7kB7ztzrBHHMBrzjfCkX\",\r\n    \"kvs\":{\r\n        \"nation\": \"Vietnam\",\r\n        \"l22\":\"24\",\r\n        \"t5\":\"04/04/2023 06:00:51\",\r\n        \"cgt\":\"04/04/2023 07:00:52\",\r\n        \"clt\":\"04/04/2023 07:00:51\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/SetUDs2"
+					},
+					"response": []
+				},
+				{
+					"name": "Get user datum (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uid\": \"ininjakJizcEJiJ7fS7U\",\r\n    \"key\": \"ldid\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetUD"
+					},
+					"response": []
+				},
+				{
+					"name": "Set user datum (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uid\": \"_7kB7ztzrBHHMBrzjfUM8\",\r\n    \"key\": \"a1\", \r\n    \"val\": \"aaaaa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/SetUD"
+					},
+					"response": []
+				},
+				{
+					"name": "Set user datum2 (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uid\": \"fakeuserid3\",\r\n    \"pv\": {\r\n        \"nation\": \"United State\",\r\n        \"pla\": \"Android\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/SetUD2"
+					},
+					"response": []
+				},
+				{
+					"name": "Detete user datum (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\": \"_XnkXfMkn7pXpW7JA9zMN\",\r\n  \"key\": \"nation\"\r\n}  ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/DelKey"
+					},
+					"response": []
+				},
+				{
+					"name": "Detete user data (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\": \"fakeuserid1\",\r\n  \"keys\": [\r\n    \"a2\"\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/DelKeys"
+					},
+					"response": []
+				},
+				{
+					"name": "Reset user data (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\": \"_7kB7ztzrBHHMBrzjfUM8\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/Reset"
+					},
+					"response": []
+				},
+				{
+					"name": "Set device info (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"did\": \"_0490c3cd9bb19dc8\",\r\n  \"kvs\": {\r\n      \"uids\": [\"_7kB7ztzrBHHMBrzjfc7a\"]\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/SetDevInfo"
+					},
+					"response": []
+				},
+				{
+					"name": "Get device info (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"did\": \"_0490c3cd9bb19dc8\",\r\n  \"keys\": [\r\n    \"user_cnt\",\r\n    \"platform\",\r\n    \"uids\",\r\n    \"operatingSystem\",\r\n    \"language\",\r\n    \"uids\"\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetDevInfo"
+					},
+					"response": []
+				},
+				{
+					"name": "Get userIDs by deviceID (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"did\": \"_0490c3cd9bb19dc8\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetUIDs"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Last user id",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"did\": \"_9a4bb9f8790c6b69\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetLastUID"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Value Of UserIDs By Key",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uids\": [\r\n    \"_7kB7ztzrBHHMBrzjfS7F\",\r\n    \"_7kB7ztzrBHHMBrzjf4MJ\"\r\n],\r\n    \"key\": \"ml\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetValues"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Public User Data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uids\": [\"_7kB7ztzrBHHMBrzjfc7a\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetPublicUD"
+					},
+					"response": []
+				},
+				{
+					"name": "Del all keys",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uid\": \"_7kB7ztzrBHHMBrzjfUM8\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/DelAllKeys"
+					},
+					"response": []
+				},
+				{
+					"name": "Add User to Device",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uid\": \"_7kB7ztzrBHHMBrzjfc7a\",\r\n    \"did\": \"_0490c3cd9bb19dc8\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/AddUID"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login method (done)",
+			"item": [
+				{
+					"name": "Login by user id",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\": \"_0490c3cd9bb19dc8\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/LogUID"
+					},
+					"response": []
+				},
+				{
+					"name": "Login with deivice 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"did\": \"_0490c3cd9bb19dc8\",\r\n  \"plf\": \"Android\",\r\n  \"lan\": \"English\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/LogDEV2"
+					},
+					"response": []
+				},
+				{
+					"name": "Login with link",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"ltp\": 1,\r\n  \"lid\": \"3616973501849158\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/LogLID"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Linking (done)",
+			"item": [
+				{
+					"name": "Create Link (d)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\": \"_7kB7ztzrBHHMBrzjfCkX\",\r\n  \"ltp\": 1,\r\n  \"lid\": \"links\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/Link"
+					},
+					"response": []
+				},
+				{
+					"name": "UnLink (d)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\": \"fake00001\",\r\n  \"ltp\": 3,\r\n  \"lid\": \"linktest2222\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/Unlink"
+					},
+					"response": []
+				},
+				{
+					"name": "Get links by UserID (d)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\": \"fake00001\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetAllLinks"
+					},
+					"response": []
+				},
+				{
+					"name": "Get all link data (d)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetAllLinkData"
+					},
+					"response": []
+				},
+				{
+					"name": "Get LinkID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uid\": \"fake00001\",\r\n    \"ltp\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetLID"
+					},
+					"response": []
+				},
+				{
+					"name": "Get LinkIDs",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uid\": \"fake00001\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetLIDs"
+					},
+					"response": []
+				},
+				{
+					"name": "Get User ID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"lid\": \"3616973501849158\",\r\n    \"ltp\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetUID"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DB Admin (done)",
+			"item": [
+				{
+					"name": "Get all link",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uid\": \"fakeuserid1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetAllLinks"
+					},
+					"response": []
+				},
+				{
+					"name": "Get all user ids",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "{{baseUrl}}/GetAllUserIDs"
+					},
+					"response": []
+				},
+				{
+					"name": "Get all user ids from date",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"frm\": \"24/01/2023\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetAllUserIDsFromDate"
+					},
+					"response": []
+				},
+				{
+					"name": "Get all device ids",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetAllDeviceIDs"
+					},
+					"response": []
+				},
+				{
+					"name": "Get all user data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetAllUserData"
+					},
+					"response": []
+				},
+				{
+					"name": "Get all device data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetAllDeviceData"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete device data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"did\": \"_0490c3cd9bb19dc8\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/DeleteDeviceData"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\": \"_7kB7ztzrBHHMBrzjfbM6\"\r\n}\r\n\r\n    // \"_7kB7ztzrBHHMBrzjfc7a\",\r\n    // \"_7kB7ztzrBHHMBrzjfpEi\"",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/DeleteUserData"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Guild",
+			"item": [
+				{
+					"name": "create guild(done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"i1\":\"Test2\", //name\r\n  \"i2\":\"get out of my way\", //des\r\n  \"i3\": 1, //badge\r\n  \"i4\": 0, //reql\r\n  \"i5\": 5, //cap\r\n  \"uid\":\"_7kB7ztzrBHHMBrzjfvEQ\", //uid\r\n  \"i7\": 0, //typ\r\n  \"mlv\": 20\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/CreateClan"
+					},
+					"response": []
+				},
+				{
+					"name": "join guild(done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uid\": \"_7kB7ztzrBHHMBrzjfItJ\",\r\n    \"cid\": 191,\r\n    \"mlv\": 34\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/JoinClan"
+					},
+					"response": []
+				},
+				{
+					"name": "leave guild(done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uid\": \"_7kB7ztzrBHHMBrzjfGEN\",\r\n    \"cid\": 36\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/LeaveClan"
+					},
+					"response": []
+				},
+				{
+					"name": "update guild (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uid\": \"fake00001\",\r\n  \"cid\": 132, //uid\r\n//   \"i1\":\"LeagueOfLosers\" //name\r\n//   \"i2\":\"haha haha\", //des\r\n//   \"i3\": 1, //badge\r\n//   \"i5\":5, //cap\r\n//   \"c\": 0, //help count\r\n//   \"b\": 0 //mlv\r\n  \"i7\": 0, //mlv\r\n  \"i4\": 0 //reql\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/UpdateClan"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove from clan (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n  \"cid\": 132, //uid\r\n    \"uid\": \"fake00112\",\r\n    \"ouid\": \"fake00632\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/RemoveFromClan"
+					},
+					"response": []
+				},
+				{
+					"name": "Block from clan (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n  \"cid\": 129, //uid\r\n    \"uid\": \"fake00001\",\r\n    \"ouid\": \"fake10159\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/BlockFromClan"
+					},
+					"response": []
+				},
+				{
+					"name": "Set New Clan Leader(done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n  \"cid\": 30, \r\n  \"uid\": \"_EpAntJAp77Mtf7J79k7g\",\r\n  \"lid\": \"_njzBrtiJJJnkcikHfU7w\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/SetClanLeader"
+					},
+					"response": []
+				},
+				{
+					"name": "Find Clan  (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uid\": \"_aBnrMrztriMcrctivW72\",\r\n    \"mlv\": 323\r\n}\r\n// chua get theo mlv",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/FindClan"
+					},
+					"response": []
+				},
+				{
+					"name": "Search Clan Contain Name (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uid\": \"_7kB7ztzrBHHMBrzjfc7a\",\r\n    \"text\": \"w\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/SearchClan"
+					},
+					"response": []
+				},
+				{
+					"name": "Get ClanID By userID (not available))",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uid\": \"_r7iHEikzJEHiX7nHfJjR\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetClanID"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Clan Data (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cid\": 192\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetClanData"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Clan Data By UID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uid\": \"_BZ77BMWj7pXjM7kQDGE5\"\r\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetClanData2"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Clan Datas By cids (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"cids\": [\r\n        \"35\",\r\n36\r\n,47\r\n   ,     \"63\"\r\n,\"66\"\r\n,\"84\"\r\n,\"87\"\r\n,\"109\"\r\n,\"110\"\r\n,\"111\"\r\n,\"112\"\r\n,\"113\"\r\n,\"116\"\r\n,\"124\"\r\n,\"137\"\r\n,\"139\"\r\n,\"145\"\r\n,\"161\"\r\n,\"162\"\r\n,\"164\"\r\n,\"168\"\r\n,\"175\"\r\n,\"181\"\r\n,\"194\"\r\n        ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetClanDatas"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Clan User Datas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uids\": [\r\n        \"_7kB7ztzrBHHMBrzjfc7a\",\r\n        \"_r7iHEikzJEHiX7nHfyV2\"\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetClanUD"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Clan Score",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\":  \"_AEEtWMnt7ZtJn7k7Dy7z\",\r\n  \"cid\": 33,\r\n  \"mlv\": 5 \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/UpdateClanScore"
+					},
+					"response": []
+				},
+				{
+					"name": "Get clan ranking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"top\": 100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetCR"
+					},
+					"response": []
+				},
+				{
+					"name": "Get clan ranking datas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cids\":  [\r\n      145\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetCRD"
+					},
+					"response": []
+				},
+				{
+					"name": "Set Member Role",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cid\": 191, //uid\r\n    \"uid\": \"_7kB7ztzrBHHMBrzjfZEr\",\r\n    \"ouid\": \"_7kB7ztzrBHHMBrzjfItJ\",\r\n    \"role\": 2\r\n}        ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/SetClanRole"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Clan Rewards",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cid\": 36, \r\n    \"uid\": \"_7fkE7JWn7AkBB7kWDC7O\",\r\n    \"rewards\": \"0_10|1_1\",\r\n    \"frm\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/AddClanRewards"
+					},
+					"response": []
+				},
+				{
+					"name": "Claim Clan Rewards",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cid\": 132, \r\n    \"uid\": \"fake00048\",\r\n    \"mid\": 828\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/ClaimClanRewards"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Guild UE",
+			"item": [
+				{
+					"name": "del guild (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cid\":\"134\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/RemoveClan"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Clan IDs (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetAllClanIDs"
+					},
+					"response": []
+				},
+				{
+					"name": "Fill Clan Fake Members",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cid\": 132,\r\n    \"cnt\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/AddClanFakes"
+					},
+					"response": []
+				},
+				{
+					"name": "Sync Clan Member Scores",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cid\": 61\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/UpdateClanFakerScore"
+					},
+					"response": []
+				},
+				{
+					"name": "Generate Fake Clan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cnt\": 1, \r\n    \"off\": 5 //offset\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GenFakeClan"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Request Life",
+			"item": [
+				{
+					"name": "Request Life",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cid\": 2,\r\n    \"uid\": \"_7kB7ztzrBHHMBrzjfNMi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/RequestLife"
+					},
+					"response": []
+				},
+				{
+					"name": "Help Life",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cid\": 34,\r\n    \"rid\": \"_AjWMZfjk7W7jQ7ktDF74\",\r\n    \"uid\": \"_7fkE7JWn7AkBB7kWDUkk\",\r\n    \"mid\": 1\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/HelpLife"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Help of user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uid\": \"_AEEtWMnt7ZtJn7k7Dy7z\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetClanHelpDatas"
+					},
+					"response": []
+				},
+				{
+					"name": "Use Clan Helps",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"hids\": [\r\n        13\r\n    ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/UseClanHelps"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Request Join Clan",
+			"item": [
+				{
+					"name": "Request Join Clan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cid\": 1,\r\n    \"uid\": \"_7kB7ztzrBHHMBrzjfH7z\",\r\n    \"mlv\": 22\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/RequestJoinClan"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Join Clan Requets",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cid\": 36\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetClanRequestJoinDatas"
+					},
+					"response": []
+				},
+				{
+					"name": "Is JoinClan Request Pending",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uid\": \"_EpAntJAp77Mtf7J79k7g\",\r\n    \"cid\": 35\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/RequestingJoinClan"
+					},
+					"response": []
+				},
+				{
+					"name": "Reject Join Clan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"rid\": 10,\r\n    \"uid\": \"_BZ77BMWj7pXjM7kQDGE5\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/RejectJoinClan"
+					},
+					"response": []
+				},
+				{
+					"name": "Accept Join Clan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"rid\": 3,\r\n    \"uid\": \"\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/AcceptJoinClan"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Messages",
+			"item": [
+				{
+					"name": "Add Message (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"msg\": \"ddddd 😜😀😊😃\",\r\n    \"pn\":\"Trong\",\r\n    \"cid\": 76,\r\n    \"uid\": \"_r7iHEikzJEHiX7nHfJjR\",\r\n    \"type\": 7\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/AddMessage"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Message (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"msg\": \"huhuh 😜😀😊😃\",\r\n    \"pn\":\"Trong\",\r\n    \"uid\": \"_pfktQXtAppppppppfQtS\",\r\n    \"type\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/UpdateMessage"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Message (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"mid\": 148,\r\n    \"cid\": 11\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/RemoveMessage"
+					},
+					"response": []
+				},
+				{
+					"name": "Get all clan messages (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cid\": 36,\r\n    \"cnt\": 2\r\n    // \"mid\": 207\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetClanMessages"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tournament (done)",
+			"item": [
+				{
+					"name": "Find Tournament (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\": \"_7kB7ztzrBHHMBrzjfGEN\",\r\n  \"plf\": 0,\r\n  \"ver\": \"1.1.0\",\r\n  \"mlv\": 150,\r\n  \"iap\": 15\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/FindTournament"
+					},
+					"response": []
+				},
+				{
+					"name": "Join Tournament (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"eid\": \"MatchingRace5\",\r\n  \"uid\": \"_7kB7ztzrBHHMBrzjfGEN\",\r\n  \"plf\": 0,\r\n  \"mlv\": 222,\r\n  \"rp\": 555,\r\n  \"iap\": 11\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/JoinTournament"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Tour Ranking (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"tab\": \"MatchingRace13_1\",\r\n  \"uid\": \"_7kB7ztzrBHHMBrzjfc7D\",\r\n  \"rp\": 666\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/UpdateTR"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Tournament Users Ranking(done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"tab\": \"MatchingRace13_2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetTR"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Tour Ranking User Rank",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"tab\": \"MatchingRace13_1\",\r\n  \"uid\": \"_7kB7ztzrBHHMBrzjfc7D\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetTRank"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Ranking User Data (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uids\": [\r\n    \"_r7iHEikzJEHiX7nHfhxw\"\r\n  ]\r\n//   ,\r\n//   \"keys\": [\"ml\", \"a3\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetRankingUD"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tournament for Unity Editor (done)",
+			"item": [
+				{
+					"name": "Get All Tournament Ids(done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetAllTourIDs"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Tournament(done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"eid\": \"MatchingRace3\",\r\n  \"all\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetTournament"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Tournament (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"en\": \"MatchingRace\",\r\n  \"st\": \"11/10/2023 11:22:00\",\r\n  \"et\": \"16/11/2023\",\r\n  \"jt\": \"10/08/2023\",\r\n  \"rt\": \"22/1/2023\",\r\n  \"jp\": 11,\r\n  \"r1\": \"string\",\r\n  \"r2\": \"string\",\r\n  \"r3\": \"string\",\r\n  \"r4\": \"string\",\r\n  \"tc\": 0,\r\n  \"r5\": \"string\",\r\n  \"ca\": 30,\r\n//   \"ra\": \"string\",\r\n//   \"ra2\": \"string\",\r\n  \"rl\": 96,\r\n//   \"mlv\": 0,\r\n    \"map\": 2000,\r\n  \"lvr\": \"150,300,2500\",\r\n  \"iapr\": \"20\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/AddTournament"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Tournament (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"eid\": \"StarRace17\",\r\n//   \"tn\": 0,\r\n  \"st\": \"06/05/2023 11:22:00\",\r\n  \"et\": \"16/05/2023\",\r\n  \"jt\": \"22/05/2023\",\r\n  \"rt\": \"22/05/2023\",\r\n  \"jp\": 10,\r\n//   \"r1\": \"string\",\r\n//   \"r2\": \"string\",\r\n//   \"r3\": \"string\",\r\n//   \"r4\": \"string\",\r\n//   \"tc\": 0,\r\n//   \"r5\": \"string\",\r\n  \"ca\": 22,\r\n//   \"ra\": \"string\",\r\n//   \"ra2\": \"string\",\r\n    \"map\": 200000,\r\n    // \"ra\":\"0.0.0\",\r\n  \"rl\": 103,\r\n  \"mlv\": 320,\r\n  \"lvr\": \"200,500,2000\",\r\n  \"iapr\":\"20,40\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/UpdateTournament"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Tournament(done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"eid\": \"StarRace20\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/RemoveTournament"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Table Ids",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"eid\": \"MatchingRace12\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetAllTableIDs"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Level Ranking",
+			"item": [
+				{
+					"name": "Find Level Ranking (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\": \"_7kB7ztzrBHHMBrzjfyMC\",\r\n  \"plf\": 0,\r\n  \"ver\": \"0.0.0\",\r\n  \"mlv\": 11\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/FindLR"
+					},
+					"response": []
+				},
+				{
+					"name": "Join LR (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"eid\": \"LevelRanking1\",\r\n  \"uid\": \"_7kB7ztzrBHHMBrzjfyMC\",\r\n  \"plf\": 0,\r\n  \"mlv\": 11,\r\n  \"rp\": 55\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/JoinLR"
+					},
+					"response": []
+				},
+				{
+					"name": "Update User  LRanking (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"tab\": \"LevelRanking2_2\",\r\n  \"uid\": \"tQMjfZJZ7JfZn7k7Ds78\",\r\n//   \"mlv\": 22,\r\n  \"rp\": 69\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/UpdateULR"
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Level Ranking (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"tab\": \"LevelRanking2_1\",\r\n  \"uid\": \"JBrct7iajBBk7BBHfV7u\",\r\n  \"zne\": 1,\r\n  \"top\": 1,\r\n  \"ard\":2 \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetULR"
+					},
+					"response": []
+				},
+				{
+					"name": "Set nation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nation\": \"Vietnam\",\r\n  \"uid\": \"_r7iHEikzJEHiX7nHf5tK\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/SetNation"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Ranking User Data (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uids\": [\"fake00001\",\"arJcJJJ7rcc7jnBEfN7m\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetRankingUD"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Level Ranking User Rank",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"tab\": \"LevelRanking3_1\",\r\n  \"uid\": \"7BzXHztnBianBMakfQ7V\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetLRRank"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Level Ranking UE",
+			"item": [
+				{
+					"name": "Get All LR Ids",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetAllLRIDs"
+					},
+					"response": []
+				},
+				{
+					"name": "Get LVR",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"eid\": \"LevelRanking5\",\r\n  \"all\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetLR"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Level Ranking (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"st\": \"11/08/2023 11:22:00\",\r\n  \"et\": \"16/11/2023\",\r\n  \"jt\": \"11/08/2023\",\r\n  \"rt\": \"22/11/2023\",\r\n  \"jp\": 11,\r\n  \"r1\": \"string\",\r\n  \"r2\": \"string\",\r\n  \"r3\": \"string\",\r\n  \"r4\": \"string\",\r\n  \"tc\": 0,\r\n//   \"ca\": 30,\r\n//   \"ra\": \"string\",\r\n//   \"ra2\": \"string\",\r\n//   \"rl\": 10,\r\n//   \"mlv\": 0,\r\n// \"map\": 2,\r\n//   \"lvr\": \"150,300,2500\",\r\n//   \"iapr\": \"20\",\r\n  \"r5\": \"string\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/AddLR"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Level Ranking (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"eid\": \"LevelRanking10\",\r\n  \"st\": \"11/01/2023 11:22:00\",\r\n  \"et\": \"16/11/2023\",\r\n  \"jt\": \"14/06/2023\",\r\n  \"rt\": \"22/1/2023\",\r\n  \"jp\": 11,\r\n//   \"r1\": \"string\",\r\n//   \"r2\": \"string\",\r\n//   \"r3\": \"string\",\r\n//   \"r4\": \"string\",\r\n  \"tc\": 0,\r\n  //   \"ra\": \"string\",\r\n//   \"ra2\": \"string\",\r\n//   \"rl\": 0,\r\n  \"map\": 1000,\r\n  \"r5\": \"55555\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/UpdateLR"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Level Ranking (done)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"eid\": \"LevelRanking2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/RemoveLR"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All LR Table Ids",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"eid\": \"LevelRanking2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetAllLRTableIDs"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove user from LevelRanking table",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"tab\": \"Level13\",\r\n  \"uid\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/RemoveULR"
+					},
+					"response": []
+				},
+				{
+					"name": "Get LR User In Range",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"tab\": \"LevelRanking3_2\",\r\n  \"frm\": 890,\r\n  \"to\": 1000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetLRRange"
+					},
+					"response": []
+				},
+				{
+					"name": "Levelup fakers Ranking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"tab\": \"LevelRanking2_3\",\r\n  \"score\": 10 // max inscrement\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/LevelUpFakerR"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Racing Event",
+			"item": [
+				{
+					"name": "Find Racing Event",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\": \"_7kB7ztzrBHHMBrzjfA7t\",\r\n  \"plf\": 0,\r\n  \"ver\": \"0.0.0\",\r\n  \"iap\":0,\r\n  \"mlv\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/FindRace"
+					},
+					"response": []
+				},
+				{
+					"name": "Join Racing Event",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n// {\"eid\":\"HorseRace1\",\"uid\":\"_7kB7ztzrBHHMBrzjfdED\",\"plf\":11,\"ver\":\"1.0.0\",\"mlv\":30,\"iap\":0}\r\n{\"eid\":\"HorseRace1\",\"uid\":\"_7kB7ztzrBHHMBrzjfA7t\",\"plf\":11,\"ver\":\"1.0.0\",\"mlv\":30,\"iap\":0}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/JoinRace"
+					},
+					"response": []
+				},
+				{
+					"name": "Start Racing Event",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\": \"_7kB7ztzrBHHMBrzjfA7t\",\r\n  \"tab\": \"HorseRace1_1\",\r\n  \"to\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/StartRace"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Race Start Time",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\": \"_7fkE7JWn7AkBB7kWDxEv\",\r\n  \"tab\": \"HorseRace1_1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetRaceStartTime"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Race Ranking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"gid\" : \"HorseRace1_1_2\",\r\n    \"uid\": \"fake00081\",\r\n    \"rp\":7,\r\n    \"fp\":15\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/UpdateRaceRanking"
+					},
+					"response": []
+				},
+				{
+					"name": "Update And Get Race Ranking 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"gid\" : \"HorseRace1_1_2\",\r\n    \"uid\": \"_7kB7ztzrBHHMBrzjfA7t\",\r\n    \"rp\":15,\r\n    \"fp\":15\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/UpdateRaceRanking2"
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Race Ranking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"gid\": \"HorseRace7_1_3\",\r\n  \"uid\": \"_kEXartjta77HXXt7f171\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetRaceUserRank"
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Race",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\": \"_7kB7ztzrBHHMBrzjfdED\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetUserRace"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Race",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"all\": 0,\r\n  \"eid\": \"HorseRace1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetRace"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Race Group Time",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"gid\": \"HorseRace1_1_1\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetRaceGroupTime"
+					},
+					"response": []
+				},
+				{
+					"name": "Claim Race Rewards",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"gid\": \"HourseRacing1_1GR1\",\r\n  \"uid\": \"_7kB7ztzrBHHMBrzjfdED\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/ClaimRaceRewards"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Racing Event UE",
+			"item": [
+				{
+					"name": "Add Race Event",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"en\":\"HorseRace\",\"st\":\"21/07/2023\",\"et\":\"29/07/2023\",\"jt\":\"23/07/2023 18:00:00\",\"rt\":\"27/07/2023\",\"fp\":15,\"r1\":\"2_60_3_1_4_1_11_1_6_1_10_1\",\"r2\":\"2_60_3_1_6_1_10_1\",\"r3\":\"6_1_10_1\",\"rl\":0,\"mlv\":0,\"lvr\":\"150,250\"}\r\n\r\n// {\r\n//   \"en\": \"HourseRacing\",\r\n//   \"st\": \"11/03/2023 11:22:00\",\r\n//   \"et\": \"16/11/2023\",\r\n//   \"jt\": \"22/07/2023\",\r\n//   \"rt\": \"22/01/2023\",\r\n//   \"fp\": 11,\r\n//   \"r1\": \"string\",\r\n//   \"r2\": \"string\",\r\n\r\n\r\n// //   \"ca\": 30,\r\n// //   \"ra\": \"string\",\r\n// //   \"ra2\": \"string\",\r\n// //   \"rl\": 10,\r\n// //   \"mlv\": 0,\r\n// // \"map\": 2,\r\n// //   \"lvr\": \"150,300,2500\",\r\n// //   \"iapr\": \"20\",\r\n//   \"r3\": \"string\"\r\n\r\n// }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/AddRace"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Race Event",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"eid\":\"HorseRace1\",\"en\":\"HorseRace\",\"st\":\"21/07/2023\",\"et\":\"29/07/2023\",\"jt\":\"26/07/2023 18:00:00\",\"rt\":\"27/07/2023\",\"fp\":15,\"r1\":\"2_60_3_1_4_1_11_1_6_1_10_1\",\"r2\":\"2_60_3_1_6_1_10_1\",\"r3\":\"6_1_10_1\",\"rl\":0,\"mlv\":0,\"lvr\":\"150,250\"}\r\n//   \"eid\": \"HourseRacing1\",\r\n//   \"en\": \"HourseRacing\",\r\n// //   \"st\": \"11/03/2023 11:22:00\",\r\n// //   \"et\": \"16/11/2023\",\r\n//   \"jt\": \"22/08/2023\",\r\n// //   \"rt\": \"22/01/2023\",\r\n//   \"fp\": 15,\r\n//   \"r1\": \"string\",\r\n//   \"r2\": \"string\",\r\n\r\n\r\n// //   \"ca\": 30,\r\n// //   \"ra\": \"string\",\r\n// //   \"ra2\": \"string\",\r\n// //   \"rl\": 10,\r\n// //   \"mlv\": 0,\r\n// // \"map\": 2,\r\n//   \"lvr\": \"150,250\",\r\n// //   \"iapr\": \"20\",\r\n//   \"r3\": \"string\"\r\n\r\n// }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/UpdateRace"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Race Ids",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetAllRaceIDs"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Race Table Ids",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"rid\": \"HourseRacing1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetAllRaceTableIDs"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Race Group IDs",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"tab\": \"HorseRace1_1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetAllRaceGroupIDs"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Race Group Ranking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"gid\": \"HorseRace7_2_13\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetRaceGroupRanking"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Race",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"eid\": \"HourseRacing1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/DeleteRace"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cron Bot Manager",
+			"item": [
+				{
+					"name": "Get Running Bots",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetRunningBots"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Saved Bots",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  //flag 1: finished, 0: not finish, otherwise: all\r\n  \"flag\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetSavedBots"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Saved Bots By Group",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n  //flag 1: finished, 0: not finish, otherwise: all\r\n  \"flag\": 0,\r\n  \"gid\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetSavedBotsByGroup"
+					},
+					"response": []
+				},
+				{
+					"name": "Stop Bot",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\": \"fake00619\",\r\n  \"gid\": \"HorseRace1_1_1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/StopBot"
+					},
+					"response": []
+				},
+				{
+					"name": "Stop And Finish Bot",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\": \"fake00725\",\r\n  \"gid\": \"HorseRace1_3_2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/FinishBot"
+					},
+					"response": []
+				},
+				{
+					"name": "Stop running Bots",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/StopBots"
+					},
+					"response": []
+				},
+				{
+					"name": "Restart slept Bots",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/RestartBots"
+					},
+					"response": []
+				},
+				{
+					"name": "Restart Group Bots",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/RestartBots"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "IAP",
+			"item": [
+				{
+					"name": "AddIAP",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"oid\": \"2000000342272011|2000000342281681\",\r\n  \"uid\": \"kEpQBZEt7fMJf7kfDY7h\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/AddIAP"
+					},
+					"response": []
+				},
+				{
+					"name": "Get User ID By OderID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"oid\": \"20000003428428372\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetIAPUserID"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Remote Cmds(done)",
+			"item": [
+				{
+					"name": "Get CMDs by UserID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\": \"fake00002\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetUserCDs"
+					},
+					"response": []
+				},
+				{
+					"name": "Get CMDs by DeviceID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"did\": \"_6746A147-D6DC-5EE2-B62B-1D2FD07B58A2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetDeviceCDs"
+					},
+					"response": []
+				},
+				{
+					"name": "Set Command Executed",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cid\": \"24\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/SetCmdExec"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Remote Cmds UE (done)",
+			"item": [
+				{
+					"name": "Get All User Commands",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetUserCmds"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All DeviceCommands",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetDeviceCmds"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All UserIDs",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetAllcmduIDs",
+						"description": "get all users in remote_cmd table"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Device IDs",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetAllCmdDIDs",
+						"description": "get all users in remote_cmd table"
+					},
+					"response": []
+				},
+				{
+					"name": "Add User Command",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\": \"fake00002\",\r\n  \"cmd\": \"asdasd asdas\",\r\n  \"msg\": \"dssss \",\r\n  \"title\": \"qqqqq\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/AddUserCmd"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Device Command",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"did\": \"_0A4205C7-E499-4CC3-9FBE-434A8A73A13F\",\r\n  \"cmd\": \"asdasd asdas\",\r\n  \"msg\": \"dssss \",\r\n  \"title\": \"qqqqq\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/AddDeviceCmd"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Command",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cid\": 1,\r\n  \"cmd\": \"hahaha\",\r\n  \"msg\": \"string\",\r\n//   \"title\": \"string\",\r\n  \"state\": 0\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/UpdateCmd"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Command",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cid\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/RemoveCmd"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Cmds by UID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\": \"fake00001\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/RemoveUserCmds"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Cmds by DID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"did\": \"_0A4205C7-E499-4CC3-9FBE-434A8A73A13F\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/RemoveDeviceCmds"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Analytics",
+			"item": [
+				{
+					"name": "Get Log Events",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"eid\": \"EndLevel\",\r\n//   \"cnt\": 2,\r\n  \"uid\": \"_XnkXfMkn7pXpW7JA9x7v\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetLogEvents"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Log Events",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cnt\": 3,\r\n  \"eid\": \"EndLevel\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetAllLogEvents"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Level Data",
+			"item": [
+				{
+					"name": "Get Level",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"lv\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetLevel"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Levels",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"frm\": 2,\r\n  \"to\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetLevels"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Levels Prefix",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"prefix\": \"hehe\",\r\n  \"frm\": 1,\r\n  \"to\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetLevelsPrefix"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Levels",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetAllLevels"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Level Data for Unity Editor",
+			"item": [
+				{
+					"name": "Set Level",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"lv\": \"hehe2\",\r\n  \"js\": \"{a: 1, b:2, c:ssssss}\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/SetLevel"
+					},
+					"response": []
+				},
+				{
+					"name": "Set Levels",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"1\": \"{a: 1}\",\r\n    \"2\": \"{b: ssss}\",\r\n    \"3\": \"{c: sss}\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/SetLevels"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Level",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"lv\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/RemoveLevel"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Levels",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"frm\": 1,\r\n  \"to\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/RemoveLevels"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Levels Prefix",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"prefix\": \"hehe\",\r\n  \"frm\": 1,\r\n  \"to\": 6\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/RemoveLevelsPrefix"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mail System",
+			"item": [
+				{
+					"name": "Get Mails",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\": \"fakeuserid2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetMails"
+					},
+					"response": []
+				},
+				{
+					"name": "Set Mail State",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"mid\": \"640056c3d5bd4fcb07206785\",\r\n  \"state\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/SetMailState"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mail System for Unity Editor",
+			"item": [
+				{
+					"name": "Add Mail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\": \"fakeuserid1\",\r\n  \"title\": \"Test\",\r\n  \"msg\": \"test\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/AddMail"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Mail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"mid\": \"640056c3d5bd4fcb07206781\",\r\n  \"title\": \"updated\",\r\n  \"msg\": \"updated\",\r\n  \"state\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/UpdateMail"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Mails",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\": \"fakeuserid1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetAllMails"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Mail User Ids",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetAllMailUserIDs"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Mail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"mid\": \"640056c3d5bd4fcb07206781\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/RemoveMail"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove All Mails",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\": \"fakeuserid3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/RemoveAllMails"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Remote Configs",
+			"item": [
+				{
+					"name": "Get Config",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pla\": \"string\",\r\n  \"ver\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetConfigs"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Remote Configs for Unity Editor",
+			"item": [
+				{
+					"name": "Add New Pv",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pla\": \"1\",\r\n  \"ver\": \"1.448\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/AddNewPV"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Configs",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetAllConfigs"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Config",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"key\": \"string\",\r\n  \"dval\": 0,\r\n  \"pla\": \"string\",\r\n  \"ver\": \"string\",\r\n  \"cond\": \"string\",\r\n  \"val\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/AddConfig"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Config",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"key\": \"string\",\r\n  \"dval\": 0,\r\n  \"pla\": \"string\",\r\n  \"ver\": \"string\",\r\n  \"cond\": \"string\",\r\n  \"val\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/UpdateConfig"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Config",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"key\": \"string\",\r\n  \"dval\": 0,\r\n  \"pla\": \"string\",\r\n  \"ver\": \"string\",\r\n  \"cond\": \"string\",\r\n  \"val\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/RemoveConfig"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Remote Gifts",
+			"item": [
+				{
+					"name": "Get Free Gifts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetFreeGifts"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Gift",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"code\": \"_fakegiftid2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetGift"
+					},
+					"response": []
+				},
+				{
+					"name": "Redeem Gift",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"code\": \"_fakegiftid2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/RedeemGift"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Remote Gifts for Unity Editor",
+			"item": [
+				{
+					"name": "Get All Gift",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetAllGifts"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Gift",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"code\": \"_newgift\",\r\n  \"title\": \"new\",\r\n  \"msg\": \"new message\",\r\n  \"rewards\": \"string\",\r\n  \"cond\": \"string\",\r\n  \"limit\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/AddGift"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Gift",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"code\": \"_newgift\",\r\n  \"title\": \"string\",\r\n  \"msg\": \"string\",\r\n  \"rewards\": \"string\",\r\n  \"cond\": \"string\",\r\n  \"limit\": 0,\r\n  \"state\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/UpdateGift"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Gift",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"code\": \"_fakegiftid1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/RemoveGift"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Saga Ranking (not available)",
+			"item": [
+				{
+					"name": "Get saga ranking user data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uids\": [\r\n    \"fakeuserid1\",\r\n    \"fakeuserid3\"\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetSRUD",
+						"description": "req: list of user id\n\nres: list of user data, include (a2,a3,a4,a9,a21,a42,l31, _id -> id)"
+					},
+					"response": []
+				},
+				{
+					"name": "Get saga ranking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\": \"fakeuserid1\",\r\n  \"zne\": 1,\r\n  \"top\": 2,\r\n  \"ard\": 9\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetSR"
+					},
+					"response": []
+				},
+				{
+					"name": "Get saga ranking 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\": \"fakeuserid1\",\r\n  \"zne\": 1,\r\n  \"ard\": 1,\r\n  \"gmx\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetSR2"
+					},
+					"response": []
+				},
+				{
+					"name": "Update saga ranking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uid\": \"fakeuserid1\",\r\n    \"mlv\": 11,\r\n    \"sta\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/UpdateSR",
+						"description": "req:{\n\nmlv: maxlevel\n\nsta: total star\n\n}\n\nStartFragment\n\nscore = mlv \\* 30000 + sta\n\nEndFragment"
+					},
+					"response": []
+				},
+				{
+					"name": "Set nation saga ranking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\": \"fakeuserid1\",\r\n  \"nation\": \"United States\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/SetNation"
+					},
+					"response": []
+				},
+				{
+					"name": "Get values many user on key",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uids\": [\r\n    \"fakeuserid1\",\r\n    \"fakeuserid3\"\r\n  ],\r\n  \"key\": \"a2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetValues"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Saga Ranking UE (not available)",
+			"item": [
+				{
+					"name": "Remove Saga Ranking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\": \"fakeuserid1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/RemoveSR"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Many Saga Ranking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uids\": [\r\n    \"fakeuserid2\",\r\n    \"fakeuserid3\"\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/RemoveManySR"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Global Ranking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"plf\": \"Android\",\r\n  \"frm\": 3,\r\n  \"to\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetGlobalRanking"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Saga Ranking Fake Ids",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"plf\": \"Android\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/GetSRFakeIDs"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User Referral",
+			"item": [
+				{
+					"name": "Play From Link",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"link\": \"string\",\r\n  \"did\": \"string\",\r\n  \"aid\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/PlayFromLink"
+					},
+					"response": []
+				},
+				{
+					"name": "Ref Count",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uid\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/RefCount"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "root",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{baseUrl}}/"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Country Log",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"db\": \"dev_afj_events\",\r\n    \"table\": \"EndLevel\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}/updateCountry"
+			},
+			"response": []
+		}
+	]
+}
